@@ -27,8 +27,6 @@ public class RefreshRoute implements Routable {
                 .and()
                 .method(HttpMethod.POST)
                 .filters(gatewayFilterSpec -> gatewayFilterSpec.stripPrefix(2)
-                        .addRequestHeader(globalProperties.getServiceTokenHeader(),
-                                globalProperties.getServiceToken())
                         .prefixPath(identityServiceProperties.getRefreshPath()))
                 .uri(identityServiceProperties.getUri());
     }

@@ -25,8 +25,6 @@ public class RegisterRoute implements Routable {
                 .and()
                 .method(HttpMethod.POST)
                 .filters(gatewayFilterSpec ->  gatewayFilterSpec.stripPrefix(2)
-                        .addRequestHeader(globalProperties.getServiceTokenHeader(),
-                                globalProperties.getServiceTokenHeader())
                         .prefixPath(identityServiceProperties.getRegisterPath()))
                 .uri(identityServiceProperties.getUri());
     }

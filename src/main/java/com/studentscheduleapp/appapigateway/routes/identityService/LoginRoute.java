@@ -27,8 +27,6 @@ public class LoginRoute implements Routable {
                 .and()
                 .method(HttpMethod.POST)
                 .filters(gatewayFilterSpec -> gatewayFilterSpec.stripPrefix(2)
-                        .addRequestHeader(globalProperties.getServiceTokenHeader(),
-                                globalProperties.getServiceToken())
                         .prefixPath(identityServiceProperties.getLoginPath()))
                 .uri(identityServiceProperties.getUri());
     }

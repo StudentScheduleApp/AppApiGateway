@@ -27,8 +27,6 @@ public class VerifyRoute implements Routable {
                 .and()
                 .method(HttpMethod.POST)
                 .filters(gatewayFilterSpec -> gatewayFilterSpec.stripPrefix(2)
-                        .addRequestHeader(globalProperties.getServiceTokenHeader(),
-                                globalProperties.getServiceToken())
                         .prefixPath(identityServiceProperties.getVerifyPath()))
                 .uri(identityServiceProperties.getUri());
     }
