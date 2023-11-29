@@ -2,7 +2,7 @@ package com.studentscheduleapp.appapigateway.routes.identityService;
 
 import com.studentscheduleapp.appapigateway.interfaces.Routable;
 import com.studentscheduleapp.appapigateway.properties.GlobalProperties;
-import com.studentscheduleapp.appapigateway.properties.gateway.GatewayIdentityPathProperties;
+import com.studentscheduleapp.appapigateway.properties.gateways.GatewayIdentityPathProperties;
 import com.studentscheduleapp.appapigateway.properties.services.IdentityServiceProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.route.Route;
