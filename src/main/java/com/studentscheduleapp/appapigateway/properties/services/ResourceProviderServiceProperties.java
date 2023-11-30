@@ -3,7 +3,6 @@ package com.studentscheduleapp.appapigateway.properties.services;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
@@ -25,11 +24,11 @@ public class ResourceProviderServiceProperties {
     @Value("${resource.provider.service.member.path.userIdPath}")
     private String getMemberByUserIdPath;
     @Value("${resource.provider.service.member.path.editPath}")
-    private String memberEditPath;
+    private String editMemberPath;
     @Value("${resource.provider.service.member.path.createPath}")
-    private String memberCreatePath;
+    private String createMemberPath;
     @Value("${resource.provider.service.member.path.deletePath}")
-    private String memberDeletePath;
+    private String deleteMemberPath;
     //Group
     @Value("${resource.provider.service.group.path.idPath}")
     private String getGroupByIdPath;

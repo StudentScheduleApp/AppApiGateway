@@ -22,7 +22,7 @@ public class GatewayResourceProviderPathProperties {
     @Value("${gateway.resource.provider.member.path.userIdPath}")
     private String getMemberByUserIdPath;
     @Value("${gateway.resource.provider.member.path.editPath}")
-    private String memberEditPath;
+    private String editMemberPath;
     @Value("${gateway.resource.provider.member.path.createPath}")
     private String createMemberPath;
     @Value("${gateway.resource.provider.member.path.deletePath}")
