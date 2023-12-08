@@ -1,4 +1,4 @@
-package com.studentscheduleapp.appapigateway.routes.resourceProviderService.member;
+package com.studentscheduleapp.appapigateway.routes.resourceProviderService.group;
 
 import com.studentscheduleapp.appapigateway.interfaces.Routable;
 import com.studentscheduleapp.appapigateway.properties.gateway.GatewayResourceProviderPathProperties;
@@ -13,18 +13,18 @@ import org.springframework.stereotype.Component;
 import java.util.function.Function;
 
 @Component
-public class GetMembersByGroupIdRoute implements Routable {
-    @Autowired
-    private GatewayResourceProviderPathProperties gatewayProperties;
+public class DeleteGroupRoute implements Routable {
     @Autowired
     private ResourceProviderServiceProperties serviceProperties;
+    @Autowired
+    private GatewayResourceProviderPathProperties gatewayProperties;
     @Override
     public Function<PredicateSpec, Buildable<Route>> getRoute() {
-        return predicateSpec -> predicateSpec.path(gatewayProperties.getGetMembersByGroupIdPath())
+        return predicateSpec -> predicateSpec.path(gatewayProperties.getDeleteGroupPath())
                 .and()
-                .method(HttpMethod.GET)
+                .method(HttpMethod.DELETE)
                 .filters(gatewayFilterSpec -> gatewayFilterSpec.stripPrefix(2)
-                        .prefixPath(serviceProperties.getGetMembersByGroupIdPath()))
+                        .prefixPath(serviceProperties.getDeleteGroupPath()))
                 .uri(serviceProperties.getUri());
     }
 }

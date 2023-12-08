@@ -1,4 +1,4 @@
-package com.studentscheduleapp.appapigateway.properties.gateways;
+package com.studentscheduleapp.appapigateway.properties.gateway;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

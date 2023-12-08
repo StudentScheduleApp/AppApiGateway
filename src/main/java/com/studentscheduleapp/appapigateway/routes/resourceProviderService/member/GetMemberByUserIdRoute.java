@@ -1,8 +1,8 @@
 package com.studentscheduleapp.appapigateway.routes.resourceProviderService.member;
 
 import com.studentscheduleapp.appapigateway.interfaces.Routable;
-import com.studentscheduleapp.appapigateway.properties.gateways.GatewayResourceProviderPathProperties;
-import com.studentscheduleapp.appapigateway.properties.services.ResourceProviderServiceProperties;
+import com.studentscheduleapp.appapigateway.properties.gateway.GatewayResourceProviderPathProperties;
+import com.studentscheduleapp.appapigateway.properties.service.ResourceProviderServiceProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.route.Route;
 import org.springframework.cloud.gateway.route.builder.Buildable;

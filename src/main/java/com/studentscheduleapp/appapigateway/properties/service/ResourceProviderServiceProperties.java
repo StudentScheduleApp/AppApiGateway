@@ -1,4 +1,4 @@
-package com.studentscheduleapp.appapigateway.properties.services;
+package com.studentscheduleapp.appapigateway.properties.service;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
