@@ -62,4 +62,16 @@ public class ResourceProviderServiceProperties {
     private String createScheduleTemplatePath;
     @Value("${resource.provider.service.scheduleTemplate.path.editPath}")
     private String editScheduleTemplatePath;
+
+    //Specific lesson
+    @Value("${resource.provider.service.specificLesson.path.idPath}")
+    private String getSpecificLessonByIdPath;
+    @Value("${resource.provider.service.specificLesson.path.groupIdPath}")
+    private String getSpecificLessonsByGroupIdPath;
+    @Value("${resource.provider.service.specificLesson.path.createPath}")
+    private String createSpecificLessonPath;
+    @Value("${resource.provider.service.specificLesson.path.editPath}")
+    private String editSpecificLessonPath;
+    @Value("${resource.provider.service.specificLesson.path.deletePath}")
+    private String deleteSpecificLessonPath;
 }
