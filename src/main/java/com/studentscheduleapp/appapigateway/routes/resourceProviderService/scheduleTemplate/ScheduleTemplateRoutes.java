@@ -6,12 +6,11 @@ import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 @Configuration
 @NoArgsConstructor
 @Getter
-public class ScheduleTemplateResourceProviderRoutes {
+public class ScheduleTemplateRoutes {
     @Autowired
     private CreateScheduleTemplateRoute createScheduleTemplateRoute;
     @Autowired
@@ -24,7 +23,7 @@ public class ScheduleTemplateResourceProviderRoutes {
     private GetOutlineByUserIdRoute getOutlineByUserIdRoute;
 
     @Bean
-    public ScheduleTemplateResourceProviderRoutes scheduleTemplateResourceProviderRoutesBean(){
-        return new ScheduleTemplateResourceProviderRoutes();
+    public ScheduleTemplateRoutes scheduleTemplateResourceProviderRoutesBean(){
+        return new ScheduleTemplateRoutes();
     }
 }

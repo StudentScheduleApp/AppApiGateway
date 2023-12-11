@@ -5,12 +5,11 @@ import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 @Configuration
 @Getter
 @NoArgsConstructor
-public class MemberResourceProviderRoutes {
+public class MemberRoutes {
     @Autowired
     private GetMemberByIdRoute getMemberByIdRoute;
     @Autowired
@@ -24,7 +23,7 @@ public class MemberResourceProviderRoutes {
     @Autowired
     private CreateMemberRoute createMemberRoute;
     @Bean
-    public MemberResourceProviderRoutes memberResourceProviderRoutesBean(){
-        return new MemberResourceProviderRoutes();
+    public MemberRoutes memberResourceProviderRoutesBean(){
+        return new MemberRoutes();
     }
 }

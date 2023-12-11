@@ -74,4 +74,48 @@ public class ResourceProviderServiceProperties {
     private String editSpecificLessonPath;
     @Value("${resource.provider.service.specificLesson.path.deletePath}")
     private String deleteSpecificLessonPath;
+    //Outline media
+    @Value("${resource.provider.service.outlineMedia.path.idPath}")
+    private String getOutlineMediaByIdPath;
+    @Value("${resource.provider.service.outlineMedia.path.outlineIdPath}")
+    private String getOutlineMediasByOutlineIdPath;
+    @Value("${resource.provider.service.outlineMedia.path.createPath}")
+    private String createOutlineMediaPath;
+    @Value("${resource.provider.service.outlineMedia.path.deletePath}")
+    private String deleteOutlineMediaPath;
+    @Value("${resource.provider.service.outlineMedia.path.editPath}")
+    private String editOutlineMediaPath;
+    //Outline media comment
+    @Value("${resource.provider.service.outlineMediaComment.path.idPath}")
+    private String getOutlineMediaCommentByIdPath;
+    @Value("${resource.provider.service.outlineMediaComment.path.outlineMediaPath}")
+    private String getOutlineMediaCommentsByOutlineMediaPath;
+    @Value("${resource.provider.service.outlineMediaComment.path.createPath}")
+    private String createOutlineMediaCommentPath;
+    @Value("${resource.provider.service.outlineMediaComment.path.editPath}")
+    private String editOutlineMediaCommentPath;
+    @Value("${resource.provider.service.outlineMediaComment.path.deletePath}")
+    private String deleteOutlineMediaCommentPath;
+    //Lesson template
+    @Value("${resource.provider.service.lessonTemplate.path.idPath}")
+    private String getLessonTemplateById;
+    @Value("${resource.provider.service.lessonTemplate.path.scheduleTemplateIdPath}")
+    private String getLessonTemplatesByScheduleTemplateId;
+    @Value("${resource.provider.service.lessonTemplate.path.createPath}")
+    private String createLessonTemplatePath;
+    @Value("${resource.provider.service.lessonTemplate.path.editPath}")
+    private String editLessonTemplatePath;
+    @Value("${resource.provider.service.lessonTemplate.path.deletePath}")
+    private String deleteLessonTemplatePath;
+    //Custom lesson
+    @Value("${resource.provider.service.customLesson.path.idPath}")
+    private String getCustomLessonByIdPath;
+    @Value("${resource.provider.service.customLesson.path.groupIdPath}")
+    private String getCustomLessonsByGroupIdPath;
+    @Value("${resource.provider.service.customLesson.path.create}")
+    private String createCustomLessonPath;
+    @Value("${resource.provider.service.customLesson.path.delete}")
+    private String deleteCustomLessonPath;
+    @Value("${resource.provider.service.customLesson.path.editPath}")
+    private String editCustomLessonPath;
 }

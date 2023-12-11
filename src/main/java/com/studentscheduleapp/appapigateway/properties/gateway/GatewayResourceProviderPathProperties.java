@@ -60,4 +60,59 @@ public class GatewayResourceProviderPathProperties {
     private String createScheduleTemplatePath;
     @Value("${gateway.resource.provider.sceduleTemplate.path.editPath}")
     private String editScheduleTemplatePath;
+    //Specific lesson
+    @Value("${gateway.resource.provider.specificLesson.path.idPath}")
+    private String getSpecificLessonByIdPath;
+    @Value("${gateway.resource.provider.specificLesson.path.groupIdPath}")
+    private String getSpecificLessonsByGroupIdPath;
+    @Value("${gateway.resource.provider.specificLesson.path.createPath}")
+    private String createSpecificLessonPath;
+    @Value("${gateway.resource.provider.specificLesson.path.editPath}")
+    private String editSpecificLessonPath;
+    @Value("${gateway.resource.provider.specificLesson.path.deletePath}")
+    private String deleteSpecificLessonPath;
+    //Outline media
+    @Value("${gateway.resource.provider.outlineMedia.path.idPath}")
+    private String getOutlineMediaByIdPath;
+    @Value("${gateway.resource.provider.outlineMedia.path.outlineIdPath}")
+    private String getOutlineMediasByOutlineIdPath;
+    @Value("${gateway.resource.provider.outlineMedia.path.createPath}")
+    private String createOutlineMediaPath;
+    @Value("${gateway.resource.provider.outlineMedia.path.deletePath}")
+    private String deleteOutlineMediaPath;
+    @Value("${gateway.resource.provider.outlineMedia.path.editPath}")
+    private String editOutlineMediaPath;
+    //Outline media comment
+    @Value("${gateway.resource.provider.outlineMediaComment.path.idPath}")
+    private String getOutlineMediaCommentByIdPath;
+    @Value("${gateway.resource.provider.outlineMediaComment.path.outlinePath}")
+    private String getOutlineMediaCommentsByOutlineMediaPath;
+    @Value("${gateway.resource.provider.outlineMediaComment.path.createPath}")
+    private String createOutlineMediaCommentPath;
+    @Value("${gateway.resource.provider.outlineMediaComment.path.editPath}")
+    private String editOutlineMediaCommentPath;
+    @Value("${gateway.resource.provider.outlineMediaComment.path.deletePath}")
+    private String deleteOutlineMediaCommentPath;
+    //Lesson template
+    @Value("${gateway.resource.provider.lessonTemplate.path.idPath}")
+    private String getLessonTemplateById;
+    @Value("${gateway.resource.provider.lessonTemplate.path.scheduleTemplateIdPath}")
+    private String getLessonTemplatesByScheduleTemplateId;
+    @Value("${gateway.resource.provider.lessonTemplate.path.createPath}")
+    private String createLessonTemplatePath;
+    @Value("${gateway.resource.provider.lessonTemplate.path.editPath}")
+    private String editLessonTemplatePath;
+    @Value("${gateway.resource.provider.lessonTemplate.path.deletePath}")
+    private String deleteLessonTemplatePath;
+    //Custom lesson
+    @Value("${gateway.resource.provider.customLesson.path.idPath}")
+    private String getCustomLessonByIdPath;
+    @Value("${gateway.resource.provider.customLesson.path.groupIdPath}")
+    private String getCustomLessonsByGroupIdPath;
+    @Value("${gateway.resource.provider.customLesson.path.create}")
+    private String createCustomLessonPath;
+    @Value("${gateway.resource.provider.customLesson.path.delete}")
+    private String deleteCustomLessonPath;
+    @Value("${gateway.resource.provider.customLesson.path.editPath}")
+    private String editCustomLessonPath;
 }
