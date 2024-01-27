@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@NoArgsConstructor
+//@NoArgsConstructor
 @Getter
 public class ResourceProviderRoutes {
     @Autowired
@@ -40,8 +40,8 @@ public class ResourceProviderRoutes {
     private SpecificLessonRoutes specificLessonRoutes;
     @Autowired
     private UserRoutes userRoutes;
-    @Bean
-    public ResourceProviderRoutes resourceProviderRoutes(){
-        return new ResourceProviderRoutes();
-    }
+  //  @Bean
+  //  public ResourceProviderRoutes resourceProviderRoutes(){
+  //      return new ResourceProviderRoutes();
+  //  }
 }

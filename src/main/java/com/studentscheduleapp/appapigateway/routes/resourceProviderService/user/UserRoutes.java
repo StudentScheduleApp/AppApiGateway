@@ -7,15 +7,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@NoArgsConstructor
+//@NoArgsConstructor
 @Getter
 public class UserRoutes {
     @Autowired
     private GetUserByIdRoute getUserByIdRoute;
     @Autowired
     private EditUserRoute editUserRoute;
-    @Bean
-    public UserRoutes userResourceProviderRoutesBean(){
-        return new UserRoutes();
-    }
+    //   @Bean
+  //  public UserRoutes userResourceProviderRoutesBean(){
+  //      return new UserRoutes();
+  //  }
 }
