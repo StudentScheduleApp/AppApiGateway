@@ -14,8 +14,4 @@ public class UserRoutes {
     private GetUserByIdRoute getUserByIdRoute;
     @Autowired
     private EditUserRoute editUserRoute;
-    //   @Bean
-  //  public UserRoutes userResourceProviderRoutesBean(){
-  //      return new UserRoutes();
-  //  }
 }

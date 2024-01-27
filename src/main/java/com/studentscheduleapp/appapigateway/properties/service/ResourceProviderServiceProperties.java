@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Getter
-@NoArgsConstructor
 public class ResourceProviderServiceProperties {
     @Value("${resource.provider.service.uri}")
     private String uri;

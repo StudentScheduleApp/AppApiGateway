@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@NoArgsConstructor
 @Getter
 public class OutlineMediaCommentRoutes {
     @Autowired
@@ -21,8 +20,4 @@ public class OutlineMediaCommentRoutes {
     private DeleteOutlineMediaCommentRoute deleteOutlineMediaCommentRoute;
     @Autowired
     private CreateOutlineMediaCommentRoute createOutlineMediaCommentRoute;
-    @Bean
-    public OutlineMediaCommentRoutes outlineMediaCommentRoutesBean(){
-        return new OutlineMediaCommentRoutes();
-    }
 }

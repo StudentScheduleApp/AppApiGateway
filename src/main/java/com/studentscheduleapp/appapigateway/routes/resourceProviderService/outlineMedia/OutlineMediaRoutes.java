@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@NoArgsConstructor
 @Getter
 public class OutlineMediaRoutes {
     @Autowired
@@ -20,8 +19,4 @@ public class OutlineMediaRoutes {
     private GetOutlineMediaByIdRoute getOutlineMediaByIdRoute;
     @Autowired
     private GetOutlineMediasByOutlineIdRoute getOutlineMediasByOutlineIdRoute;
-    @Bean
-    public OutlineMediaRoutes outlineMediaResourcesProviderRoutesBean(){
-        return new OutlineMediaRoutes();
-    }
 }

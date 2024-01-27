@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Getter
-@NoArgsConstructor
 public class OutlineRoutes {
     @Autowired
     private CreateOutlineRoute createOutlineRoute;
@@ -22,8 +21,4 @@ public class OutlineRoutes {
     private GetOutlineBySpecificLessonIdRoute getOutlineBySpecificLessonIdRoute;
     @Autowired
     private GetOutlineByIdRoute getOutlineByIdRoute;
-    @Bean
-    public OutlineRoutes outlineResourcesProviderRoutesBean(){
-        return new OutlineRoutes();
-    }
 }

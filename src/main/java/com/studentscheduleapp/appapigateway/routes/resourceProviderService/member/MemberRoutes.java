@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Getter
-@NoArgsConstructor
 public class MemberRoutes {
     @Autowired
     private GetMemberByIdRoute getMemberByIdRoute;
@@ -22,8 +21,4 @@ public class MemberRoutes {
     private DeleteMemberRoute deleteMemberRoute;
     @Autowired
     private CreateMemberRoute createMemberRoute;
-    @Bean
-    public MemberRoutes memberResourceProviderRoutesBean(){
-        return new MemberRoutes();
-    }
 }

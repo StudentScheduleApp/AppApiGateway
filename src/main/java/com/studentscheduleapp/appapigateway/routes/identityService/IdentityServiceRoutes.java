@@ -8,9 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties
 @Getter
-@NoArgsConstructor
 public class IdentityServiceRoutes {
     @Autowired
     private RegisterRoute registerRoute;
@@ -20,8 +18,4 @@ public class IdentityServiceRoutes {
     private LoginRoute loginRoute;
     @Autowired
     private VerifyRoute verifyRoute;
-    @Bean
-    public IdentityServiceRoutes identityServiceRoutesBean(){
-        return new IdentityServiceRoutes();
-    }
 }

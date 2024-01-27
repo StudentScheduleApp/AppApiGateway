@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Getter
-@NoArgsConstructor
 public class CustomLessonRoutes {
     @Autowired
     private CreateCustomLessonRoute createCustomLessonRoute;
@@ -20,8 +19,4 @@ public class CustomLessonRoutes {
     private GetCustomLessonByIdRoute getCustomLessonByIdRoute;
     @Autowired
     private GetCustomLessonsByGroupIdRoute getCustomLessonsByGroupIdRoute;
-    @Bean
-    public CustomLessonRoutes customLessonRoutesBean(){
-        return new CustomLessonRoutes();
-    }
 }

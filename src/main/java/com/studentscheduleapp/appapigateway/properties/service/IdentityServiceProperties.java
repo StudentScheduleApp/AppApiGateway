@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Getter
-@NoArgsConstructor
 public class IdentityServiceProperties {
     @Value("${identity.service.uri}")
     private String uri;
@@ -20,8 +19,4 @@ public class IdentityServiceProperties {
     private String loginPath;
     @Value("${identity.service.refreshPath}")
     private String refreshPath;
-    @Bean
-    public IdentityServiceProperties getIdentityServicePropertiesBean(){
-        return new IdentityServiceProperties();
-    }
 }

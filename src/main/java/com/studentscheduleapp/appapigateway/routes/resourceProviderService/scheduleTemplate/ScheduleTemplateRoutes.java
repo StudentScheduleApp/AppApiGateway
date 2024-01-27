@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@NoArgsConstructor
 @Getter
 public class ScheduleTemplateRoutes {
     @Autowired
@@ -22,8 +21,4 @@ public class ScheduleTemplateRoutes {
     @Autowired
     private GetOutlineByUserIdRoute getOutlineByUserIdRoute;
 
-    @Bean
-    public ScheduleTemplateRoutes scheduleTemplateResourceProviderRoutesBean(){
-        return new ScheduleTemplateRoutes();
-    }
 }

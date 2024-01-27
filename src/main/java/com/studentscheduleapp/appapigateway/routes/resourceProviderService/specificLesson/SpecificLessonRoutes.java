@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@NoArgsConstructor
 @Getter
 public class SpecificLessonRoutes {
     @Autowired
@@ -20,8 +19,4 @@ public class SpecificLessonRoutes {
     private DeleteSpecificLessonRoute deleteSpecificLessonRoute;
     @Autowired
     private EditSpecificLessonRoute editSpecificLessonRoute;
-    @Bean
-    public SpecificLessonRoutes specificLessonResourceProviderRoutesBean(){
-        return new SpecificLessonRoutes();
-    }
 }

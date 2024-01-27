@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Getter
-@NoArgsConstructor
 public class GroupRoutes {
     @Autowired
     private CreateGroupRoute createGroupRoute;
@@ -18,8 +17,4 @@ public class GroupRoutes {
     private EditGroupRoute editGroupRoute;
     @Autowired
     private GetGroupByIdRoute getGroupByIdRoute;
-    @Bean
-    public GroupRoutes groupResourceProviderRoutesBean(){
-        return new GroupRoutes();
-    }
 }

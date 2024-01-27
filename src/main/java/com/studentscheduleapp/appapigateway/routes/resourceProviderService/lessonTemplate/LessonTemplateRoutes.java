@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@NoArgsConstructor
 @Getter
 public class LessonTemplateRoutes {
     @Autowired
@@ -20,8 +19,4 @@ public class LessonTemplateRoutes {
     private GetLessonTemplateByIdRoute getLessonTemplateByIdRoute;
     @Autowired
     private GetLessonTemplatesByScheduleTemplateIdRoute getLessonTemplatesByScheduleTemplateIdRoute;
-    @Bean
-    public LessonTemplateRoutes lessonTemplateRoutesBean(){
-        return new LessonTemplateRoutes();
-    }
 }
