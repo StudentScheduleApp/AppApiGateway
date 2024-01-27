@@ -17,10 +17,10 @@ public class GatewayConfiguration {
     @Bean
     RouteLocator routeLocator (RouteLocatorBuilder builder){
         return builder.routes()
-                .route("register", identityServiceRoutes.getRegisterRoute().getRoute())
-                .route("refresh",identityServiceRoutes.getRefreshRoute().getRoute())
-                .route("login",identityServiceRoutes.getLoginRoute().getRoute())
-                .route("verify",identityServiceRoutes.getVerifyRoute().getRoute())
+                .route(identityServiceRoutes.getRegisterRoute().getRoute())
+                .route(identityServiceRoutes.getRefreshRoute().getRoute())
+                .route(identityServiceRoutes.getLoginRoute().getRoute())
+                .route(identityServiceRoutes.getVerifyRoute().getRoute())
                 .build();
     }
 }
