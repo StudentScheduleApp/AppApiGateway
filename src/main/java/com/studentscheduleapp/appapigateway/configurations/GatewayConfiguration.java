@@ -21,6 +21,7 @@ public class GatewayConfiguration {
                 .route(identityServiceRoutes.getRefreshRoute().getRoute())
                 .route(identityServiceRoutes.getLoginRoute().getRoute())
                 .route(identityServiceRoutes.getVerifyRoute().getRoute())
+                .route(identityServiceRoutes.getGetUserByTokenRoute().getRoute())
                 .route(resourceProviderRoutes.getGroupRoutes().getGetGroupByIdRoute().getRoute())
                 .route(resourceProviderRoutes.getGroupRoutes().getCreateGroupRoute().getRoute())
                 .route(resourceProviderRoutes.getGroupRoutes().getDeleteGroupRoute().getRoute())

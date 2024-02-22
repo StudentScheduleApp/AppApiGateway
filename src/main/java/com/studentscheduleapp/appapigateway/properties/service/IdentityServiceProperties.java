@@ -19,4 +19,6 @@ public class IdentityServiceProperties {
     private String loginPath;
     @Value("${identity.service.refreshPath}")
     private String refreshPath;
+    @Value("${identity.service.getUserIdByTokenPath}")
+    private String getUserIdByTokenPath;
 }

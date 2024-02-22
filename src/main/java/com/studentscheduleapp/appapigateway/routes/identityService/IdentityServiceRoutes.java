@@ -18,4 +18,6 @@ public class IdentityServiceRoutes {
     private LoginRoute loginRoute;
     @Autowired
     private VerifyRoute verifyRoute;
+    @Autowired
+    private GetUserByTokenRoute getUserByTokenRoute;
 }

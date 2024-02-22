@@ -17,4 +17,6 @@ public class GatewayIdentityPathProperties {
     private String loginPath;
     @Value("${gateway.identity.path.refreshPath}")
     private String refreshPath;
+    @Value("${gateway.identity.path.getUserIdByTokenPath}")
+    private String getUserIdByTokenPath;
 }
