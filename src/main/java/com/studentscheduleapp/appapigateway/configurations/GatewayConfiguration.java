@@ -55,6 +55,7 @@ public class GatewayConfiguration {
                 .route(resourceProviderRoutes.getOutlineMediaCommentRoutes().getEditOutlineMediaCommentRoute().getRoute())
                 .route(resourceProviderRoutes.getOutlineMediaCommentRoutes().getGetOutlineMediaCommentByIdRoute().getRoute())
                 .route(resourceProviderRoutes.getOutlineMediaCommentRoutes().getGetOutlineMediasByOutlineIdRoute().getRoute())
+                .route(resourceProviderRoutes.getOutlineMediaCommentRoutes().getGetOutlineMediasByOutlineIdRoute().getRoute())
                 .route(resourceProviderRoutes.getScheduleTemplateRoutes().getCreateScheduleTemplateRoute().getRoute())
                 .route(resourceProviderRoutes.getScheduleTemplateRoutes().getDeleteScheduleTemplateRoute().getRoute())
                 .route(resourceProviderRoutes.getScheduleTemplateRoutes().getEditScheduleTemplateRoute().getRoute())
