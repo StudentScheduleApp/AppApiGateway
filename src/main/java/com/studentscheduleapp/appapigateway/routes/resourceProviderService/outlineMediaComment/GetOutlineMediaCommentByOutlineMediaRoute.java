@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import java.util.function.Function;
 
 @Component
-public class GetOutlineMediaCommentsByOutlineMediaRoute implements Routable {
+public class GetOutlineMediaCommentByOutlineMediaRoute implements Routable {
     @Autowired
     private ResourceProviderServiceProperties serviceProperties;
     @Autowired
