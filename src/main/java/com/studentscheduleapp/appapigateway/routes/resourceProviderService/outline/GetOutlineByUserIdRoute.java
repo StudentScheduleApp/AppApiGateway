@@ -25,7 +25,7 @@ public class GetOutlineByUserIdRoute implements Routable {
                 .and()
                 .method(HttpMethod.GET)
                 .filters(gatewayFilterSpec -> gatewayFilterSpec.stripPrefix(2)
-                        .prefixPath(serviceProperties.getGetOutlineByIdPath()))
+                        .prefixPath(serviceProperties.getGetOutlineByUserIdPath()))
                 .uri(serviceProperties.getUri());
     }
 }

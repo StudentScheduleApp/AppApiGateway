@@ -58,7 +58,7 @@ public class GatewayConfiguration {
                 .route(resourceProviderRoutes.getScheduleTemplateRoutes().getCreateScheduleTemplateRoute().getRoute())
                 .route(resourceProviderRoutes.getScheduleTemplateRoutes().getDeleteScheduleTemplateRoute().getRoute())
                 .route(resourceProviderRoutes.getScheduleTemplateRoutes().getEditScheduleTemplateRoute().getRoute())
-                .route(resourceProviderRoutes.getScheduleTemplateRoutes().getGetOutlineByUserIdRoute().getRoute())
+                .route(resourceProviderRoutes.getScheduleTemplateRoutes().getGetScheduleTemplateByGroupIdRoute().getRoute())
                 .route(resourceProviderRoutes.getScheduleTemplateRoutes().getGetScheduleTemplateByIdRoute().getRoute())
                 .route(resourceProviderRoutes.getSpecificLessonRoutes().getEditSpecificLessonRoute().getRoute())
                 .route(resourceProviderRoutes.getSpecificLessonRoutes().getCreateSpecificLessonRoute().getRoute())
