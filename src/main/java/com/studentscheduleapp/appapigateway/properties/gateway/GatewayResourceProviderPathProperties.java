@@ -83,7 +83,7 @@ public class GatewayResourceProviderPathProperties {
     //Outline media comment
     @Value("${gateway.resource.provider.outlineMediaComment.path.idPath}")
     private String getOutlineMediaCommentByIdPath;
-    @Value("${gateway.resource.provider.outlineMediaComment.path.outlinePath}")
+    @Value("${gateway.resource.provider.outlineMediaComment.path.outlineMediaPath}")
     private String getOutlineMediaCommentsByOutlineMediaPath;
     @Value("${gateway.resource.provider.outlineMediaComment.path.createPath}")
     private String createOutlineMediaCommentPath;
