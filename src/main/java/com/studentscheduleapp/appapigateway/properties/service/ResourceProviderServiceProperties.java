@@ -110,9 +110,9 @@ public class ResourceProviderServiceProperties {
     private String getCustomLessonByIdPath;
     @Value("${resource.provider.service.customLesson.path.groupIdPath}")
     private String getCustomLessonsByGroupIdPath;
-    @Value("${resource.provider.service.customLesson.path.create}")
+    @Value("${resource.provider.service.customLesson.path.createPath}")
     private String createCustomLessonPath;
-    @Value("${resource.provider.service.customLesson.path.delete}")
+    @Value("${resource.provider.service.customLesson.path.deletePath}")
     private String deleteCustomLessonPath;
     @Value("${resource.provider.service.customLesson.path.editPath}")
     private String editCustomLessonPath;

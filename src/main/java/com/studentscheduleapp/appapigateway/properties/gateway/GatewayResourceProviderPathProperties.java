@@ -1,7 +1,6 @@
 package com.studentscheduleapp.appapigateway.properties.gateway;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
@@ -108,9 +107,9 @@ public class GatewayResourceProviderPathProperties {
     private String getCustomLessonByIdPath;
     @Value("${gateway.resource.provider.customLesson.path.groupIdPath}")
     private String getCustomLessonsByGroupIdPath;
-    @Value("${gateway.resource.provider.customLesson.path.create}")
+    @Value("${gateway.resource.provider.customLesson.path.createPath}")
     private String createCustomLessonPath;
-    @Value("${gateway.resource.provider.customLesson.path.delete}")
+    @Value("${gateway.resource.provider.customLesson.path.deletePath}")
     private String deleteCustomLessonPath;
     @Value("${gateway.resource.provider.customLesson.path.editPath}")
     private String editCustomLessonPath;
