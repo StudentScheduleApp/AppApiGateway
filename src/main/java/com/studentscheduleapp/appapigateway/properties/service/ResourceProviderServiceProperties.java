@@ -1,7 +1,6 @@
 package com.studentscheduleapp.appapigateway.properties.service;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
@@ -16,7 +15,7 @@ public class ResourceProviderServiceProperties {
     @Value("${resource.provider.service.user.path.editPath}")
     private String userEditPath;
     //Member
-    @Value("${resource.provider.service.member.path.memberIdPath}")
+    @Value("${resource.provider.service.member.path.idPath}")
     private String getMemberByIdPath;
     @Value("${resource.provider.service.member.path.groupIdPath}")
     private String getMembersByGroupIdPath;

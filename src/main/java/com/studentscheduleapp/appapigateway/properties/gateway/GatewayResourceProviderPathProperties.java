@@ -14,7 +14,7 @@ public class GatewayResourceProviderPathProperties {
     @Value("${gateway.resource.provider.user.path.editPath}")
     private String editUserPath;
     //Member
-    @Value("${gateway.resource.provider.member.path.memberIdPath}")
+    @Value("${gateway.resource.provider.member.path.idPath}")
     private String getMemberByIdPath;
     @Value("${gateway.resource.provider.member.path.groupIdPath}")
     private String getMembersByGroupIdPath;
